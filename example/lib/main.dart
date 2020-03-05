@@ -15,7 +15,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     AdColony.initialize(
-        appId: 'app4f4659d279be4554ad', zoneId: ['vz9a841ab586ae4d72b9', 'vz4eacd40a32ad4fd69c', 'vz09f26f8ad3c340c484'], consent: true);
+        appId: 'app1d1a0cd84c7f4a9aac', zoneId: ['vz11012d106add41bf86', 'vzfaa3859f6d114806b0', 'vzfaa3859f6d114806b0'], consent: true);
   }
 
   _requestInterstitial(String zoneId) {
@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
             Padding(
               padding: EdgeInsets.all(10.0),
               child: RaisedButton(
-                onPressed: () => _requestInterstitial('vz9a841ab586ae4d72b9'),
+                onPressed: () => _requestInterstitial('vz11012d106add41bf86'),
                 child: Text('Show Interstitial'),
               ),
             ),
@@ -56,9 +56,9 @@ class _MyAppState extends State<MyApp> {
                 child: Text('Show Interstitial rewarded'),
               ),
             ),
-            AdColonyBanner('vz09f26f8ad3c340c484', BannerSizes.BANNER, (BannerEvent event) {}),
+            AdColonyBanner('vzfaa3859f6d114806b0', BannerSizes.BANNER, (BannerEvent event) {}),
             Padding(padding: EdgeInsets.only(top: 10.0)),
-            AdColonyBanner('vz09f26f8ad3c340c484', BannerSizes.MEDIUM_RECTANGLE, (BannerEvent event) {}),
+            AdColonyBanner('vzfaa3859f6d114806b0', BannerSizes.MEDIUM_RECTANGLE, (BannerEvent event) {}),
           ],
         ),
       ),

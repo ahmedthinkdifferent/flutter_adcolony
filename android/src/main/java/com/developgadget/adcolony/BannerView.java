@@ -55,12 +55,7 @@ public class BannerView extends AdColonyAdViewListener implements PlatformView {
         Log.d("AdColony Banner", "onRequestFilled");
         this.Banner = adColonyAdView;
         this.Parent.addView(adColonyAdView);
-        this.activity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                BannerView.this.channel.invokeMethod("onRequestFilled", null);
-            }
-        });
+        BannerView.this.channel.invokeMethod("onRequestFilled", null);
     }
 
     @Override
