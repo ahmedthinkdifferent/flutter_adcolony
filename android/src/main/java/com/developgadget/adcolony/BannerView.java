@@ -61,12 +61,7 @@ public class BannerView extends AdColonyAdViewListener implements PlatformView {
     @Override
     public void onRequestNotFilled(AdColonyZone zone) {
         Log.e("AdColony Banner", "onRequestNotFilled");
-        this.activity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                BannerView.this.channel.invokeMethod("onRequestNotFilled", null);
-            }
-        });
+        BannerView.this.channel.invokeMethod("onRequestNotFilled", null);
     }
 
     @Override
